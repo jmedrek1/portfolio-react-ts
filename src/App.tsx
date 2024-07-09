@@ -1,12 +1,10 @@
-import Header from './components/Header';
 import './App.css';
-import About from './components/About';
+import HomePage from './components/HomePage';
 
 export default function App() {
   return (
     <>
-      <Header />
-      <About />
+      <HomePage />
     </>
   );
 };
