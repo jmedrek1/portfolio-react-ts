@@ -1,6 +1,15 @@
 {
-  "The Adventures of Shamrock Sholmes": {
+  "ShamrockSholmes": {
+    "fullname": "The Adventures of Shamrock Sholmes",
     "description": "",
-    "imagePath": "img/shamrock.png"
+    "imagePath": "img/shamrock.png",
+    "startDate": {
+      "month": 6,
+      "year": 2020
+    },
+    "endDate": {
+      "month": 8,
+      "year": 2020
+    }
   }
 }
