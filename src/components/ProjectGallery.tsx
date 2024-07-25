@@ -1,5 +1,9 @@
 import ProjectCard from "./utils/ProjectCard";
 import projectData from "../assets/Projects/projects.json";
+import { ProjectDataType } from 'types';
+import { createContext } from "react";
+
+export const ProjectContext = createContext<ProjectDataType>(projectData);
 
 export default function ProjectGallery() {
   // TODO: create grid to house project cards, and when clicked, will go to separate project page
@@ -20,8 +24,8 @@ export default function ProjectGallery() {
   ];
 
   return (
-    <>
-      {/* <ProjectCard projectName="The Adventures of Shamrock Sholmes" projectData={projectData} /> */}
-    </>
+    <ProjectContext.Provider value={projectData}>
+      {/* <ProjectCard projectName="ShamrockSholmes" /> */}
+    </ProjectContext.Provider>
   );
 }

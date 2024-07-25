@@ -2,16 +2,9 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import { SxProps, Theme } from "@mui/material/styles";
-
-interface ProjectInfo {
-  description: string;
-  imagePath: string;
-}
-
-interface ProjectCardProps {
-  projectName: string;
-  projectData: Record<string, ProjectInfo>;
-}
+import { ProjectCardProps } from "types";
+import { useContext } from "react";
+import { ProjectContext } from "../ProjectGallery";
 
 const paperStyles: SxProps<Theme> = {
   bgcolor: "secondary.main",
@@ -56,7 +49,8 @@ const contentContainerStyles: SxProps<Theme> = {
   overflow: "hidden",
 }
 
-export default function ProjectCard({ projectName, projectData }: ProjectCardProps): JSX.Element {
+export default function ProjectCard({ projectName }: ProjectCardProps): JSX.Element {
+  const projectData = useContext(ProjectContext);
   const project = projectData[projectName];
 
   if (!project) {

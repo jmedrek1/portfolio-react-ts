@@ -1,11 +1,5 @@
-import Link, { LinkProps } from "@mui/material/Link";
-
-interface CustomLinkProps extends Omit<LinkProps, 'href'> {
-  href: string;
-  hoverColor?: string;
-  underlineColor?: string;
-  children: React.ReactNode
-};
+import Link from "@mui/material/Link";
+import { CustomLinkProps } from "types";
 
 export default function CustomLink({ 
   href, 

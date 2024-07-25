@@ -10,6 +10,7 @@ import App from './App';
 import About from './components/About';
 import ProjectGallery from './components/ProjectGallery';
 import Contact from './components/Contact';
+import ProjectPage from './components/ProjectPage';
 
 const lightTheme = createTheme({
   palette: {
@@ -41,7 +42,10 @@ const router = createBrowserRouter([
     path: '/projects',
     element: <ProjectGallery />
   },
-  // TODO: figure out how to route individual projects
+  {
+    path: '/project/:projectName',
+    element: <ProjectPage />
+  },
   {
     path: '/contact',
     element: <Contact />
