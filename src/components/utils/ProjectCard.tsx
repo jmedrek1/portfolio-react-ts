@@ -1,6 +1,7 @@
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
+import Link from "@mui/material/Link";
 import { SxProps, Theme } from "@mui/material/styles";
 import { ProjectCardProps } from "types";
 import { useContext } from "react";
@@ -8,8 +9,8 @@ import { ProjectContext } from "../ProjectGallery";
 
 const paperStyles: SxProps<Theme> = {
   bgcolor: "secondary.main",
-  width: "25vmin",
-  height: "40vmin",
+  width: "30vmin",
+  height: "30vmin",
   position: "relative",
   overflow: "hidden",
   borderRadius: 3,
@@ -49,6 +50,13 @@ const contentContainerStyles: SxProps<Theme> = {
   overflow: "hidden",
 }
 
+const linkStyles: SxProps<Theme> = {
+  textDecoration: 'none',
+  color: 'inherit',
+  display: 'inline-block',
+  width: 'fit-content',
+}
+
 export default function ProjectCard({ projectName }: ProjectCardProps): JSX.Element {
   const projectData = useContext(ProjectContext);
   const project = projectData[projectName];
@@ -56,19 +64,21 @@ export default function ProjectCard({ projectName }: ProjectCardProps): JSX.Elem
   if (!project) {
     return <Paper sx={paperStyles}>Project not found</Paper>;
   }
-
   return (
-    <Paper elevation={3} sx={paperStyles}>
-      <Box sx={contentContainerStyles}>
-        <Box component="img" src={project.imagePath} alt={projectName} sx={imageStyles}/>
-        <Typography 
-          variant="subtitle1"
-          className="project-name"
-          sx={nameStyles}
-        >
-          {projectName}
-        </Typography>
-      </Box>
-    </Paper>
+    <Link href={`/project/${projectName}`} sx={linkStyles}>
+      <Paper elevation={3} sx={paperStyles}>
+        <Box sx={contentContainerStyles}>
+          <Box component="img" src={project.imagePath} alt={projectName} sx={imageStyles}/>
+          <Typography 
+            variant="subtitle1"
+            className="project-name"
+            sx={nameStyles}
+          >
+            {projectName}
+          </Typography>
+        </Box>
+      </Paper>
+    </Link>
+    
   );
 }

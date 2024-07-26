@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useContext } from "react";
 import { ProjectContext } from "./ProjectGallery";
+import ProjectCard from "./utils/ProjectCard";
 
 export default function ProjectPage() {
   const projectData = useContext(ProjectContext);

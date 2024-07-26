@@ -25,7 +25,7 @@ export default function ProjectGallery() {
 
   return (
     <ProjectContext.Provider value={projectData}>
-      {/* <ProjectCard projectName="ShamrockSholmes" /> */}
+      <ProjectCard projectName="ShamrockSholmes" />
     </ProjectContext.Provider>
   );
 }
