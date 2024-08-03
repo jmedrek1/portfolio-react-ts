@@ -17,7 +17,7 @@ interface ProjectDate {
 
 interface ProjectInfo {
   fullname: string;
-  description: string;
+  descriptionPath: string;
   imagePath: string;
   startDate: ProjectDate;
   endDate: ProjectDate;

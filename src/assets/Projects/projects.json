@@ -1,7 +1,7 @@
 {
-  "ShamrockSholmes": {
+  "shamrock": {
     "fullname": "The Adventures of Shamrock Sholmes",
-    "description": "",
+    "descriptionPath": "shamrock_desc.txt",
     "imagePath": "img/shamrock.png",
     "startDate": {
       "month": 6,

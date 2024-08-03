@@ -6,7 +6,7 @@ import { createContext } from "react";
 export const ProjectContext = createContext<ProjectDataType>(projectData);
 
 export default function ProjectGallery() {
-  // TODO: create grid to house project cards, and when clicked, will go to separate project page
+  // TODO: create grid to house project cards
   const PERSONAL: string[] = [
     "ShamrockSholmes",
     "YouDodgedABullet",
@@ -25,7 +25,7 @@ export default function ProjectGallery() {
 
   return (
     <ProjectContext.Provider value={projectData}>
-      <ProjectCard projectName="ShamrockSholmes" />
+      <ProjectCard projectName="shamrock" />
     </ProjectContext.Provider>
   );
 }
