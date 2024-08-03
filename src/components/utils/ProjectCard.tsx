@@ -74,7 +74,7 @@ export default function ProjectCard({ projectName }: ProjectCardProps): JSX.Elem
             className="project-name"
             sx={nameStyles}
           >
-            {projectName}
+            {project.fullname}
           </Typography>
         </Box>
       </Paper>
