@@ -43,7 +43,7 @@ const linkStyles: SxProps<Theme> = {
 
 function HomePage(): JSX.Element {
   return (
-    <React.Fragment>
+    <>
       <CssBaseline />
       <Box sx={boxStyles}>
         <Box sx={headerBoxStyles}>
@@ -61,7 +61,7 @@ function HomePage(): JSX.Element {
           <Link href="/contact" sx={linkStyles}>Contact</Link>
         </Box>
       </Box>
-    </React.Fragment>
+    </>
   );
 }
 
