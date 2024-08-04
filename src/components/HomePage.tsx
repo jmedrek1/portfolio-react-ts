@@ -51,7 +51,7 @@ function HomePage(): JSX.Element {
             John Medrek
           </Typography>
           <Typography variant="h3" fontWeight={200} align="left">
-            {useTypewriter("Software Engineer Intern", 70)}
+            {useTypewriter("CS Student @ UConn", 70)}
           </Typography>
         </Box>
 
