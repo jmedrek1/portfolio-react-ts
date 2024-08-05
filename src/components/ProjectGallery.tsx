@@ -37,7 +37,7 @@ export default function ProjectGallery() {
 
       <Box sx={boxStyles}>
         <Box sx={headerBoxStyles}>
-          <Typography variant="h2" fontWeight={900} align="left">
+          <Typography variant="h2" fontWeight={900} align="left" color="primary.main">
             My Projects
           </Typography>
         </Box>

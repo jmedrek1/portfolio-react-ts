@@ -179,7 +179,7 @@ export default function ProjectPage() {
             <Typography
               variant="h4"
               sx={{
-                color: "primary.dark",
+                color: "primary.main",
                 fontWeight: "bold",
                 marginBottom: 1,
               }}

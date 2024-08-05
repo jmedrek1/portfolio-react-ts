@@ -68,7 +68,7 @@ export default function About(): JSX.Element {
             variant="h3"
             className="text-left pb-5 pt-5 pl-2"
             sx={{
-              color: "primary.dark",
+              color: "primary.main",
               fontWeight: "bold"
             }}
           >
