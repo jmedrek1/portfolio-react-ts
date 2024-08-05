@@ -7,7 +7,6 @@ import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
-// import textfile from "../assets/Projects/shamrock_desc.txt";
 
 export default function ProjectPage() {
   const projectData = useContext(ProjectContext);
@@ -19,7 +18,7 @@ export default function ProjectPage() {
   
   if (!projectName || !project) {
     console.error(`project ${projectName} not found.`);
-    return;
+    return (<></>);
   };
 
   const formatDate = (date) => {
@@ -44,94 +43,6 @@ export default function ProjectPage() {
     }
   }, [project]);
 
-  // return (
-  //   <Box 
-  //     sx={{
-  //       bgcolor: "secondary.main",
-  //       minHeight: "100vh",
-  //       width: "100vw",
-  //       margin: 0,
-  //       padding: 0,
-  //       display: "flex",
-  //       alignItems: "center",
-  //       justifyContent: "center",
-  //     }}
-  //   >
-  //     <Paper
-  //       elevation={3}
-  //       sx={{
-  //         bgcolor: "secondary.main",
-  //         width: "80vmin",
-  //         height: "80vmin",
-  //         display: "flex",
-  //         overflow: "hidden",
-  //         borderRadius: 3
-  //       }}
-  //     >
-  //       <Box
-  //         sx={{
-  //           width: "50%",
-  //           height: "100%",
-  //           overflow: "auto",
-  //           padding: 3,
-  //         }}
-  //       >
-  //         <Typography
-  //           variant="h3"
-  //           className="text-left pb-2 pl-2"
-  //           sx={{
-  //             color: "primary.dark",
-  //             fontWeight: "bold",
-  //             marginBottom: 2,
-  //           }}
-  //         >
-  //           {project.fullname}
-  //         </Typography>
-  //         <Typography 
-  //           variant="h6" 
-  //           className="text-left whitespace-pre-wrap pl-2"
-  //           sx={{
-  //             color: "primary.dark",
-  //             marginBottom: 2 
-  //           }}>
-  //             {formatDate(project.startDate)} - {formatDate(project.endDate)}
-  //           </Typography>
-  //         <Typography 
-  //           variant="h6" 
-  //           className="text-left whitespace-pre-wrap p-8"
-  //           sx={{
-  //             color: "primary.dark",
-  //             marginBottom: 2 
-  //           }}
-  //         >
-  //           {error ? `Error loading description: ${error}` : description}
-  //         </Typography>
-  //       </Box>
-  //       <Card
-  //         sx={{
-  //           width: "50%",
-  //           height: "40%",
-  //           display: "flex",
-  //           flexDirection: "column",
-  //           marginTop: 3,
-  //           marginRight: 3,
-  //           borderRadius: 1,
-  //         }}
-  //       >
-  //         <CardMedia
-  //           component="img"
-  //           image={`/${project.imagePath}`}
-  //           height="200px"
-  //           alt={project.fullname}
-  //           sx={{
-  //             height: "100%",
-  //             objectFit: "cover",
-  //           }}
-  //         />
-  //       </Card>
-  //     </Paper>
-  //   </Box>
-  // );
   return (
     <Box 
       sx={{
