@@ -1,7 +1,7 @@
 {
   "shamrock": {
     "fullname": "The Adventures of Shamrock Sholmes",
-    "descriptionPath": "shamrock_desc.txt",
+    "descriptionPath": "desc/shamrock.txt",
     "imagePath": "img/shamrock.png",
     "startDate": {
       "month": 6,
@@ -10,6 +10,123 @@
     "endDate": {
       "month": 8,
       "year": 2020
+    }
+  },
+  "bullet": {
+    "fullname": "You Dodged a Bullet",
+    "descriptionPath": "desc/bullet.txt",
+    "imagePath": "img/bullet.png",
+    "startDate": {
+      "month": 12,
+      "year": 2020
+    },
+    "endDate": {
+      "month": 1,
+      "year": 2021
+    }
+  },
+  "cfni": {
+    "fullname": "CFNI Calculator",
+    "descriptionPath": "desc/cfni.txt",
+    "imagePath": "img/cfni.png",
+    "startDate": {
+      "month": 9,
+      "year": 2022
+    },
+    "endDate": {
+      "month": 9,
+      "year": 2022
+    }
+  },
+  "granttrails": {
+    "fullname": "Grant Trails",
+    "descriptionPath": "desc/granttrails.txt",
+    "imagePath": "img/granttrails.png",
+    "startDate": {
+      "month": 12,
+      "year": 2022
+    },
+    "endDate": {
+      "month": 3,
+      "year": 2023
+    }
+  },
+  "bcm": {
+    "fullname": "BCM App",
+    "descriptionPath": "desc/bcm.txt",
+    "imagePath": "img/bcm.jpg",
+    "startDate": {
+      "month": 5,
+      "year": 2023
+    },
+    "endDate": {
+      "month": -1,
+      "year": -1
+    }
+  },
+  "timesheet": {
+    "fullname": "DXG Staff Timesheet",
+    "descriptionPath": "desc/timesheet.txt",
+    "imagePath": "img/timesheet.png",
+    "startDate": {
+      "month": 8,
+      "year": 2023
+    },
+    "endDate": {
+      "month": -1,
+      "year": -1
+    }
+  },
+  "vernet": {
+    "fullname": "VeRNet",
+    "descriptionPath": "desc/vernet.txt",
+    "imagePath": "img/vernet.png",
+    "startDate": {
+      "month": 6,
+      "year": 2023
+    },
+    "endDate": {
+      "month": 5,
+      "year": 2024
+    }
+  },
+  "vistsn": {
+    "fullname": "VisTSN",
+    "descriptionPath": "desc/vistsn.txt",
+    "imagePath": "img/vistsn.png",
+    "startDate": {
+      "month": 6,
+      "year": 2023
+    },
+    "endDate": {
+      "month": 9,
+      "year": 2023
+    }
+  },
+  "stockpicker": {
+    "fullname": "Random Stock Picker",
+    "descriptionPath": "desc/stockpicker.txt",
+    "imagePath": "img/stockpicker.png",
+    "startDate": {
+      "month": 12,
+      "year": 2023
+    },
+    "endDate": {
+      "month": 12,
+      "year": 2023
+    }
+  },
+  "spotify": {
+    "fullname": "Spotify Clone",
+    "descriptionPath": "desc/spotify.txt",
+    "imagePath": "img/spotify.png",
+    "startDate": {
+      "month": 9,
+      "year": 2023
+    },
+    "endDate": {
+      "month": 1,
+      "year": 2024
     }
   }
 }
