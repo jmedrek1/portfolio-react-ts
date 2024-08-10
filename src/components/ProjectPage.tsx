@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
 import { ProjectContext } from "./ProjectGallery";
 import { format } from "date-fns";
+import { parseText } from "../helpers";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
@@ -142,7 +143,7 @@ export default function ProjectPage() {
               whiteSpace: "pre-wrap",
             }}
           >
-            {error ? `Error loading description: ${error}` : description}
+            {error ? `Error loading description: ${error}` : parseText(description)}
           </Typography>
         </Box>
       </Paper>

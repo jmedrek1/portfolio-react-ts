@@ -1,5 +1,16 @@
 import { LinkProps } from "react-router-dom";
 
+// HELPERS
+export type ParsedText = (string | React.ReactElement)[];
+export type PhraseLink = { [key: string]: string };
+
+export interface Match {
+  index: number;
+  end: number;
+  phrase: string | undefined;
+  url: string;
+}
+
 // UTILS
 export interface CustomLinkProps extends Omit<LinkProps, 'href'> {
   href: string;

@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 
 import textfile from "../assets/About/desc.txt";
 import AboutPageImage from "./utils/AboutPageImage";
-import { parseText, PhraseLink } from "../helpers";
+import { parseText } from "../helpers";
 
 // Main component
 export default function About(): JSX.Element {
@@ -24,13 +24,6 @@ export default function About(): JSX.Element {
       console.error("Error fetching text:", error);
     });
   }, []);
-
-  const phrasesToLink: PhraseLink = {
-    "The Hartford": "https://thehartford.com",
-    // "University of Connecticut": "https://cse.uconn.edu",
-    // "Academy of Aerospace and Engineering": "https://aaen.crecschools.org/",
-    // TODO: support multiple kv pairs
-  }
   
   return (
     <Box 
@@ -82,7 +75,7 @@ export default function About(): JSX.Element {
               fontWeight: "semi-bold"
             }}
           >
-            {text ? parseText(text, phrasesToLink) : 'Loading...'}
+            {text ? parseText(text) : 'Loading...'}
           </Typography>
         </Box>
       </Paper>
