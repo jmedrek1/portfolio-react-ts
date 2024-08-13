@@ -22,8 +22,14 @@ export default function ProjectPage() {
     return (<></>);
   };
 
-  const formatDate = (date) => {
-    return format(new Date(date.year, date.month - 1), 'MMMM yyyy'); // months from 0 to 11
+  const formatDate = (startDate, endDate) => {
+    if (startDate.year === endDate.year && startDate.month === endDate.month) {
+      return `${format(new Date(startDate.year, startDate.month - 1), 'MMMM yyyy')}`;
+    } else if (endDate.year === -1 && endDate.month === -1) {
+      return `${format(new Date(startDate.year, startDate.month - 1), 'MMMM yyyy')} - Present`;
+    }
+
+    return `${format(new Date(startDate.year, startDate.month - 1), 'MMMM yyyy')} - ${format(new Date(endDate.year, endDate.month - 1), 'MMMM yyyy')}`;
   }
 
   useEffect(() => {
@@ -104,7 +110,7 @@ export default function ProjectPage() {
                 color: "primary.dark",
               }}
             >
-              {formatDate(project.startDate)} - {formatDate(project.endDate)}
+              {formatDate(project.startDate, project.endDate)}
             </Typography>
           </Box>
           <Card
