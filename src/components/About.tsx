@@ -62,7 +62,7 @@ export default function About(): JSX.Element {
             className="text-left pb-5 pt-5 pl-2"
             sx={{
               color: "primary.main",
-              fontWeight: "bold"
+              fontWeight: "bold",
             }}
           >
             About Me

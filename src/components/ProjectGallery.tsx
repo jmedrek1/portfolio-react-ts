@@ -7,7 +7,7 @@ import { Grid, Box, SxProps, Theme, Typography } from "@mui/material";
 const boxStyles: SxProps<Theme> = {
   bgcolor: "secondary.main",
   minHeight: "100vh",
-  width: "100vw",
+  width: "100%",
   margin: 0,
   padding: 0,
   display: "flex",
@@ -24,25 +24,26 @@ const headerBoxStyles: SxProps<Theme> = {
 };
 
 const galleryBoxStyles: SxProps<Theme> = {
-
+  overflowX: "hidden", // Hide horizontal scrollbar
+  width: "100%", // Ensure full width
+  padding: "0 1rem", // Add some horizontal padding
 };
 
 export const ProjectContext = createContext<ProjectDataType>(projectData);
 
 export default function ProjectGallery() {
-  // TODO: create grid to house project cards
 
   return (
     <ProjectContext.Provider value={projectData}>
 
       <Box sx={boxStyles}>
         <Box sx={headerBoxStyles}>
-          <Typography variant="h2" fontWeight={900} align="left" color="primary.main">
+          <Typography variant="h3" fontWeight={900} align="left" color="primary.main">
             My Projects
           </Typography>
         </Box>
         <Box sx={galleryBoxStyles}>
-          <Grid container spacing={3}>
+          <Grid container spacing={6}>
             {Object.keys(projectData).map((projectName) => (
               <Grid item xs={12} sm={6} md={4} lg={3} key={projectName}>
                 <ProjectCard projectName={projectName} />
