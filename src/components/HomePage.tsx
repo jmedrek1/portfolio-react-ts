@@ -21,6 +21,7 @@ const boxStyles: SxProps<Theme> = {
 };
 
 const headerBoxStyles: SxProps<Theme> = {
+  color: "secondary.main",
   alignSelf: "flex-start",
   margin: "2rem",
 };
@@ -50,7 +51,7 @@ function HomePage(): JSX.Element {
           <Typography variant="h2" fontWeight={900} align="left">
             John Medrek
           </Typography>
-          <Typography variant="h3" fontWeight={200} align="left">
+          <Typography variant="h4" fontWeight={200} align="left" fontFamily={"monospace"}>
             {useTypewriter("CS Student @ UConn", 70)}
           </Typography>
         </Box>
