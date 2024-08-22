@@ -16,13 +16,13 @@ const lightTheme = createTheme({
   palette: {
     mode: 'light',
     primary: {
-      main: '#0058f0', //#1e6d75
-      dark: '#10152e', //#102b2e
-      light: '#6694e3' //#88dae3
+      main: '#0058f0',
+      dark: '#10152e',
+      light: '#6694e3'
     },
     secondary: {
-      main: '#fffef7', //#fef8dc
-      light: '#ffffff', //#fffbeb
+      main: '#fffef7',
+      light: '#ffffff',
     }
   },
   typography: {

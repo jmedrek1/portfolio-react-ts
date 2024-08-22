@@ -4,8 +4,6 @@ import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
 import { SxProps, Theme } from "@mui/material/styles";
 import useTypewriter from "../hooks/useTypewriter";
-import React from "react";
-
 
 const boxStyles: SxProps<Theme> = {
   bgcolor: "primary.main",
@@ -37,9 +35,17 @@ const linkBoxStyles: SxProps<Theme> = {
 };
 
 const linkStyles: SxProps<Theme> = {
-  color: "black",
+  color: "secondary.main",
   textDecoration: "none",
   fontSize: "1.5rem",
+  transition: "all 0.3s ease", // Smooth transition for hover effect
+  padding: "0.5rem 1rem", // Add some padding for better hover effect
+  borderRadius: "4px", // Rounded corners
+  "&:hover": {
+    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", // Shadow on hover
+    transform: "translateY(-2px)", // Slight upward movement on hover
+    backgroundColor: "rgba(255, 255, 255, 0.1)", // Slight background change on hover
+  },
 };
 
 function HomePage(): JSX.Element {
@@ -48,7 +54,7 @@ function HomePage(): JSX.Element {
       <CssBaseline />
       <Box sx={boxStyles}>
         <Box sx={headerBoxStyles}>
-          <Typography variant="h2" fontWeight={900} align="left">
+          <Typography variant="h2" fontWeight={400} align="left">
             John Medrek
           </Typography>
           <Typography variant="h4" fontWeight={200} align="left" fontFamily={"monospace"}>
