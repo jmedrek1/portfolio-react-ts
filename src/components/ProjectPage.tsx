@@ -68,7 +68,7 @@ export default function ProjectPage() {
         sx={{
           bgcolor: "secondary.main",
           width: "80vmin",
-          height: "80vmin",
+          minHeight: "0vmin",
           display: "flex",
           flexDirection: "column",
           overflow: "hidden",
@@ -136,7 +136,9 @@ export default function ProjectPage() {
         <Box
           sx={{
             width: "100%",
-            height: "70%",
+            flex: 1,
+            display: "flex",
+            flexDirection: "column",
             overflow: "auto",
           }}
         >
@@ -147,6 +149,8 @@ export default function ProjectPage() {
               color: "primary.dark",
               fontWeight: "normal",
               whiteSpace: "pre-wrap",
+              flex: 1,
+              marginBottom: 3,
             }}
           >
             {error ? `Error loading description: ${error}` : parseText(description)}
