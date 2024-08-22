@@ -98,7 +98,7 @@ export default function ProjectPage() {
               variant="h4"
               sx={{
                 color: "primary.main",
-                fontWeight: "bold",
+                fontWeight: 400,
                 marginBottom: 1,
               }}
             >
