@@ -1,4 +1,4 @@
-import { Box, Button, FormControl, Link, Paper, TextField, Typography } from "@mui/material";
+import { Box, Button, Link, Paper, TextField, Typography } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ArticleIcon from '@mui/icons-material/Article';
@@ -90,12 +90,12 @@ export default function Contact(): JSX.Element {
             </Box>
             <Button 
               variant="contained" 
+              type="submit"
               sx={{ 
                 borderRadius: 4,
                 width: '48px',
                 height: '48px',
               }}
-              // onSubmit={} TODO: wire up
             >
               <ArrowForwardIcon />
             </Button>
