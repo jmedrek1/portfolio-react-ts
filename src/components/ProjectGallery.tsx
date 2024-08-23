@@ -2,7 +2,7 @@ import ProjectCard from "./utils/ProjectCard";
 import projectData from "../assets/Projects/projects.json";
 import { ProjectDataType } from 'types';
 import { createContext } from "react";
-import { Grid, Box, SxProps, Theme, Typography } from "@mui/material";
+import { Box, SxProps, Theme, Typography } from "@mui/material";
 
 const boxStyles: SxProps<Theme> = {
   bgcolor: "secondary.main",
@@ -27,6 +27,8 @@ const galleryBoxStyles: SxProps<Theme> = {
   overflowX: "hidden", // Hide horizontal scrollbar
   width: "100%", // Ensure full width
   padding: "0 1rem", // Add some horizontal padding
+  display: "flex",
+  flexDirection: "column",
 };
 
 export const ProjectContext = createContext<ProjectDataType>(projectData);
@@ -43,13 +45,15 @@ export default function ProjectGallery() {
           </Typography>
         </Box>
         <Box sx={galleryBoxStyles}>
-          <Grid container spacing={6}>
+          {/* <Grid container spacing={6}>
             {Object.keys(projectData).map((projectName) => (
               <Grid item xs={12} sm={6} md={4} lg={3} key={projectName}>
                 <ProjectCard projectName={projectName} />
               </Grid>
             ))}
-          </Grid>
+          </Grid> */}
+          <ProjectCard projectName="shamrock" />
+          <ProjectCard projectName="vistsn" />
         </Box>
       </Box>
       

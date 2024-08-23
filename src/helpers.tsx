@@ -1,5 +1,6 @@
 import CustomLink from './components/utils/CustomLink';
 import { ParsedText, PhraseLink, Match } from 'types';
+import { format } from 'date-fns';
 
 // Will be linked to globally
 const PHRASES: PhraseLink = {
@@ -62,4 +63,14 @@ export function parseText(text: string): ParsedText {
   }
 
   return result;
+}
+
+export const formatDate = (startDate, endDate, formatStr) => {
+  if (startDate.year === endDate.year && startDate.month === endDate.month) {
+    return `${format(new Date(startDate.year, startDate.month - 1), formatStr)}`;
+  } else if (endDate.year === -1 && endDate.month === -1) {
+    return `${format(new Date(startDate.year, startDate.month - 1), formatStr)} - Present`;
+  }
+
+  return `${format(new Date(startDate.year, startDate.month - 1), formatStr)} - ${format(new Date(endDate.year, endDate.month - 1), formatStr)}`;
 }

@@ -1,0 +1,3 @@
+This stock picker was a personal weekend project using vanilla JS and HTML/CSS. Because I needed to draw the stock symbols from somewhere, I originally thought to pull a list from somewhere online and put it in a list or JSON. 
+        
+About five seconds later, I realised that it would be much easier and safer to use an API to draw both my ticker symbols and price data. I decided on AlphaVantage's intra-day time series for the data, and because of the amount of traffic I get, the free tier is just fine.

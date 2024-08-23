@@ -1,0 +1,5 @@
+This was my starter project as a new developer for UConn's Digital Experience Group. Super basic idea, but pretty well executed with positive feedback. The UConn Rudd Center reached out to DXG and asked us to create a "health index" calculator related to WellSCAN (another DXG project) based on the proportion of healthy, medium and unhealthy foods entered in.
+
+The building of this CFNI calculator helped me expand my knowledge of JavaScript along with Git and source control. Being able to initiate a pull request and to push to a new branch is useful for me to know going into the software industry.
+
+The final product was delivered to UConn's Rudd Center as an embedded page.

@@ -1,0 +1,3 @@
+The Biodiversity Conservatory Management (BCM) app is another project under Squared Labs/DXG. It's currently in development, and when finished, will take over for the current greenhouse inventory website. The current greenhouse site was created in the early 2000's, and right now is being hosted on a personal server with plain PHP.
+
+With the help of the team at the greenhouse, I am working on porting the contents to a Laravel site, and hosting it on an encrypted server for the forseeable future. With thousands of different species in their inventory, it's important to make sure the greenhouse website can handle high amounts of data.

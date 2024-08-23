@@ -1,0 +1,5 @@
+Out of a lack of homework over winter break of my senior year in high school, I decided to program a simple two-dimensional videogame. Taking inspiration from several YouTube videos and countless StackOverflow tabs, I created "You Dodged a Bullet" in Java from scratch. It involves moving a character in order to dodge various projectiles that move across the screen.
+
+In the process of creating this game, I expanded my knowledge on the concepts of inheritance and polymorphism in Java. Most of the classes and objects used to program the game were based off of a few core classes, thereby interlinking all of the program's Java files.
+
+The end product involed over twenty-five Java files, each serving an essential purpose in the game. At the time of creation, it was my largest Java project by a fair margin.
