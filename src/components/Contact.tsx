@@ -41,7 +41,15 @@ export default function Contact(): JSX.Element {
         >
           Let's Connect!
         </Typography>
-        <FormControl fullWidth sx={{ gap: 2 }}>
+        <Box
+          component="form"
+          // TODO: onSubmit={handleSubmit}
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: 2,
+          }}
+        >
           <TextField 
             label="Email" 
             fullWidth 
@@ -92,7 +100,7 @@ export default function Contact(): JSX.Element {
               <ArrowForwardIcon />
             </Button>
           </Box>
-        </FormControl>
+        </Box>
       </Paper>
     </Box>
   );
