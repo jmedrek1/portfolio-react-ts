@@ -32,6 +32,7 @@ interface ProjectInfo {
   imagePath: string;
   startDate: ProjectDate;
   endDate: ProjectDate;
+  tech: string[];
 }
 
 // Define the type for the entire projectData object

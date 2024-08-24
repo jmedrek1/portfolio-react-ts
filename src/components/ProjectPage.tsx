@@ -1,8 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
 import { ProjectContext } from "./ProjectGallery";
-import { format } from "date-fns";
-import { parseText } from "../helpers";
+import { parseText, formatDate } from "../helpers";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
@@ -21,16 +20,6 @@ export default function ProjectPage() {
     console.error(`project ${projectName} not found.`);
     return (<></>);
   };
-
-  const formatDate = (startDate, endDate) => {
-    if (startDate.year === endDate.year && startDate.month === endDate.month) {
-      return `${format(new Date(startDate.year, startDate.month - 1), 'MMMM yyyy')}`;
-    } else if (endDate.year === -1 && endDate.month === -1) {
-      return `${format(new Date(startDate.year, startDate.month - 1), 'MMMM yyyy')} - Present`;
-    }
-
-    return `${format(new Date(startDate.year, startDate.month - 1), 'MMMM yyyy')} - ${format(new Date(endDate.year, endDate.month - 1), 'MMMM yyyy')}`;
-  }
 
   useEffect(() => {
     if (project.descriptionPath) {
@@ -110,7 +99,7 @@ export default function ProjectPage() {
                 color: "primary.dark",
               }}
             >
-              {formatDate(project.startDate, project.endDate)}
+              {formatDate(project.startDate, project.endDate, 'MMMM yyyy')}
             </Typography>
           </Box>
           <Card
