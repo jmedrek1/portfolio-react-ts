@@ -10,7 +10,11 @@
     "endDate": {
       "month": 8,
       "year": 2020
-    }
+    },
+    "tech": [
+      "Stencyl",
+      "Scratch"
+    ]
   },
   "bullet": {
     "fullname": "You Dodged a Bullet",
@@ -23,7 +27,10 @@
     "endDate": {
       "month": 1,
       "year": 2021
-    }
+    },
+    "tech": [
+      "Java"
+    ]
   },
   "cfni": {
     "fullname": "CFNI Calculator",
@@ -36,7 +43,12 @@
     "endDate": {
       "month": 9,
       "year": 2022
-    }
+    },
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
   },
   "granttrails": {
     "fullname": "Grant Trails",
@@ -49,7 +61,12 @@
     "endDate": {
       "month": 3,
       "year": 2023
-    }
+    },
+    "tech": [
+      "Vue",
+      "MapBox",
+      "Supabase"
+    ]
   },
   "bcm": {
     "fullname": "BCM App",
@@ -62,7 +79,11 @@
     "endDate": {
       "month": -1,
       "year": -1
-    }
+    },
+    "tech": [
+      "Laravel",
+      "Supabase"
+    ]
   },
   "timesheet": {
     "fullname": "DXG Staff Timesheet",
@@ -75,7 +96,11 @@
     "endDate": {
       "month": -1,
       "year": -1
-    }
+    },
+    "tech": [
+      "Laravel",
+      "Supabase"
+    ]
   },
   "vernet": {
     "fullname": "VeRNet",
@@ -88,7 +113,12 @@
     "endDate": {
       "month": 5,
       "year": 2024
-    }
+    },
+    "tech": [
+      "Vue",
+      "TypeScript",
+      "Three.js"
+    ]
   },
   "vistsn": {
     "fullname": "VisTSN",
@@ -101,7 +131,12 @@
     "endDate": {
       "month": 9,
       "year": 2023
-    }
+    },
+    "tech": [
+      "Vue",
+      "TypeScript",
+      "Apache Echarts"
+    ]
   },
   "stockpicker": {
     "fullname": "Random Stock Picker",
@@ -114,7 +149,12 @@
     "endDate": {
       "month": 12,
       "year": 2023
-    }
+    },
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
   },
   "spotify": {
     "fullname": "Spotify Clone",
@@ -127,6 +167,11 @@
     "endDate": {
       "month": 1,
       "year": 2024
-    }
+    },
+    "tech": [
+      "React",
+      "TypeScript",
+      "Supabase"
+    ]
   }
 }

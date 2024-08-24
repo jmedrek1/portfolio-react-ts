@@ -45,15 +45,9 @@ export default function ProjectGallery() {
           </Typography>
         </Box>
         <Box sx={galleryBoxStyles}>
-          {/* <Grid container spacing={6}>
-            {Object.keys(projectData).map((projectName) => (
-              <Grid item xs={12} sm={6} md={4} lg={3} key={projectName}>
-                <ProjectCard projectName={projectName} />
-              </Grid>
-            ))}
-          </Grid> */}
-          <ProjectCard projectName="shamrock" />
-          <ProjectCard projectName="vistsn" />
+          {Object.keys(projectData).map((projectName) => (
+            <ProjectCard projectName={projectName} />
+          ))}
         </Box>
       </Box>
       
